@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV DA GALERA - Melhor Streaming de Filmes, Séries e TV ao Vivo</title>
+    <meta name="description" content="Acesse milhares de filmes, séries e canais de TV ao vivo com a TV DA GALERA. O melhor streaming com preços acessíveis.">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8B5CF6',
+                        secondary: '#EC4899',
+                        dark: '#0F172A',
+                        light: '#F8FAFC'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-light overflow-x-hidden">
+    <!-- Componentes -->
+    <custom-navbar></custom-navbar>
+    
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/20 via-dark to-secondary/20">
+    <div class="absolute inset-0 bg-[url('images/futebol2.png')] bg-cover bg-center opacity-20"></div>
+        <div class="relative z-10 container mx-auto px-4 py-20 mt-16 md:mt-0">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left space-y-6 animate-fade-in">
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent leading-tight">
+                        TV DA GALERA
+                    </h1>
+                    <p class="text-lg sm:text-xl md:text-2xl text-gray-300">
+                        A melhor experiência de streaming com milhares de filmes, séries e TV ao vivo!
+                    </p>
+                    <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                        <a href="#plans" class="px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-bold rounded-full hover:scale-105 transition-transform shadow-lg">
+                            Ver Planos
+                        </a>
+                        <a href="https://wa.me/5522992814560?text=Olá! Quero saber mais sobre a TV DA GALERA" target="_blank" class="px-8 py-4 bg-green-500 text-white font-bold rounded-full hover:bg-green-600 transition-all shadow-lg flex items-center gap-2">
+                            <i data-feather="message-circle" class="w-5 h-5"></i>
+                            Fale Conosco
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-3 md:flex gap-4 md:gap-6 justify-center md:justify-start pt-6">
+                        <div class="text-center">
+                            <div class="text-2xl md:text-3xl font-bold text-primary">10.000+</div>
+                            <div class="text-xs md:text-sm text-gray-400">Filmes</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl md:text-3xl font-bold text-secondary">5.000+</div>
+                            <div class="text-xs md:text-sm text-gray-400">Séries</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl md:text-3xl font-bold text-green-500">500+</div>
+                            <div class="text-xs md:text-sm text-gray-400">Canais</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-0 rounded-2xl overflow-hidden">
+                        <img src="images/logo_tv.png" alt="Logo TV ao fundo" class="w-full h-full object-cover opacity-30" style="transform: scale(1.2); transform-origin: center;">
+                    </div>
+                    <img src="images/pipocas.png" alt="Família assistindo TV" class="relative mx-auto animate-float z-10" style="width: 80%; height: auto;">
+                </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gradient-to-b from-dark to-dark/80">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                    Por que escolher TV DA GALERA?
+                </h2>
+                <p class="text-xl text-gray-400">Recursos incríveis que fazem a diferença</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-primary/10 to-transparent p-8 rounded-2xl border border-primary/30 hover:border-primary/60 transition-all hover:scale-105 group">
+                    <div class="bg-primary/20 rounded-full p-4 w-16 h-16 mb-6 group-hover:bg-primary/30 transition-colors">
+                        <i data-feather="tv" class="w-8 h-8 text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">TV ao Vivo</h3>
+                    <p class="text-gray-400">Mais de 500 canais ao vivo incluindo futebol, notícias, novelas, desenhos e entretenimento 24/7.</p>
+                </div>
+                <div class="bg-gradient-to-br from-secondary/10 to-transparent p-8 rounded-2xl border border-secondary/30 hover:border-secondary/60 transition-all hover:scale-105 group">
+                    <div class="bg-secondary/20 rounded-full p-4 w-16 h-16 mb-6 group-hover:bg-secondary/30 transition-colors">
+                        <i data-feather="film" class="w-8 h-8 text-secondary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">Filmes e Séries</h3>
+                    <p class="text-gray-400">Catálogo completo com lançamentos, clássicos e exclusivos atualizados semanalmente.</p>
+                </div>
+                <div class="bg-gradient-to-br from-green-500/10 to-transparent p-8 rounded-2xl border border-green-500/30 hover:border-green-500/60 transition-all hover:scale-105 group">
+                    <div class="bg-green-500/20 rounded-full p-4 w-16 h-16 mb-6 group-hover:bg-green-500/30 transition-colors">
+                        <i data-feather="smartphone" class="w-8 h-8 text-green-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">Multiplataforma</h3>
+                    <p class="text-gray-400">Assista em qualquer dispositivo: TV, celular, tablet ou computador.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="plans" class="py-20 bg-gradient-to-b from-dark/80 to-dark">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                    Plano da GALERA
+                </h2>
+                <p class="text-xl text-gray-400">Escolha o plano da galera feito para você</p>
+            </div>
+            <div class="max-w-md mx-auto">
+                <div class="bg-gradient-to-br from-primary/10 to-secondary/10 p-8 rounded-2xl border-2 border-primary transform scale-105 relative text-center">
+                    <h3 class="text-2xl font-bold mb-4 text-white">Plano da galera</h3>
+                    <div class="text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-6">R$ 35<span class="text-lg text-gray-400">/mês</span></div>
+                    <ul class="space-y-3 mb-8 text-gray-300">
+                        <li class="flex items-center justify-center gap-3">
+                            <i data-feather="check" class="w-5 h-5 text-green-500"></i>
+                            <span>4K Ultra HD</span>
+                        </li>
+                        <li class="flex items-center justify-center gap-3">
+                            <i data-feather="check" class="w-5 h-5 text-green-500"></i>
+                            <span>1 tela simultânea</span>
+                        </li>
+                        <li class="flex items-center justify-center gap-3">
+                            <i data-feather="check" class="w-5 h-5 text-green-500"></i>
+                            <span>TV ao Vivo inclusa</span>
+                        </li>
+                        <li class="flex items-center justify-center gap-3">
+                            <i data-feather="check" class="w-5 h-5 text-green-500"></i>
+                            <span>Séries e Filmes ilimitados</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/5522992814560?text=Quero%20assinar%20o%20Plano%20da%20TV%20DA%20GALERA" target="_blank" class="w-full block text-center px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white font-bold rounded-full hover:scale-105 transition-transform">
+                        Assinar Agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="content" class="py-20 bg-gradient-to-b from-dark to-dark/80">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                    Nosso Conteúdo
+                </h2>
+                <p class="text-xl text-gray-400">Explore nossa diversificada biblioteca</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="relative group overflow-hidden rounded-xl cursor-pointer">
+                    <img src="images/banner_1.jpg" alt="Filmes e Séries" class="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <div>
+                            <h4 class="text-white font-bold text-lg">Filmes &amp; Séries</h4>
+                            <p class="text-gray-300 text-sm">Ação, comédia, drama, Terror e muito mais</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl cursor-pointer">
+                    <img src="images/banner_2.png" alt="Desenhos" class="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <div>
+                            <h4 class="text-white font-bold text-lg">Desenhos infantis</h4>
+                            <p class="text-gray-300 text-sm">Animações infantis para toda família</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl cursor-pointer">
+                    <img src="images/banner_3.jpg" alt="Futebol" class="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <div>
+                            <h4 class="text-white font-bold text-lg">Futebol</h4>
+                            <p class="text-gray-300 text-sm">Melhores jogos e cobertura ao vivo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl cursor-pointer">
+                    <img src="images/banner_4.png" alt="Documentários" class="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <div>
+                            <h4 class="text-white font-bold text-lg">Documentários</h4>
+                            <p class="text-gray-300 text-sm">Natureza, história, ciência e muito mais</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gradient-to-b from-dark/80 to-dark">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                    O que nossos clientes dizem
+                </h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-dark/50 p-6 rounded-xl border border-gray-700">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-feather="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                    </div>
+                    <p class="text-gray-300 mb-4">"Melhor serviço de streaming que já usei! Catálogo completo e preço imbatível."</p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://static.photos/people/50x50/10" alt="Cliente" class="w-10 h-10 rounded-full">
+                        <div>
+                            <div class="font-semibold text-white">João Silva</div>
+                            <div class="text-sm text-gray-400">Cliente da galera</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-dark/50 p-6 rounded-xl border border-gray-700">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-feather="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                    </div>
+                    <p class="text-gray-300 mb-4">"A TV ao Vivo é perfeita! Nunca perco um jogo do meu time. Recomendo muito!"</p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://static.photos/people/50x50/11" alt="Cliente" class="w-10 h-10 rounded-full">
+                        <div>
+                            <div class="font-semibold text-white">Maria Santos</div>
+                            <div class="text-sm text-gray-400">Cliente da galera</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-dark/50 p-6 rounded-xl border border-gray-700">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-feather="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                    </div>
+                    <p class="text-gray-300 mb-4">"Qualidade de imagem excelente e interface muito fácil de usar. Meus filhos amam!"</p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://static.photos/people/50x50/12" alt="Cliente" class="w-10 h-10 rounded-full">
+                        <div>
+                            <div class="font-semibold text-white">Pedro Costa</div>
+                            <div class="text-sm text-gray-400">Cliente da galera</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">Pronto para começar?</h2>
+            <p class="text-xl mb-8 text-white/90">Junte-se a milhares de clientes satisfeitos</p>
+            <a href="https://wa.me/5522992814560?text=Olá! Quero me cadastrar na TV DA GALERA" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 bg-white text-primary font-bold rounded-full hover:scale-105 transition-transform shadow-2xl">
+                <i data-feather="message-circle" class="w-6 h-6"></i>
+                Fale com um especialista agora
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <custom-footer></custom-footer>
+    
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/5522992814560?text=Olá! Quero saber mais sobre a TV DA GALERA" target="_blank" class="fixed bottom-6 right-6 md:bottom-8 md:right-8 bg-green-500 text-white p-3 md:p-5 rounded-full shadow-2xl hover:bg-green-600 transition-all z-50 animate-bounce-slow" aria-label="Fale conosco no WhatsApp">
+        <svg class="w-8 h-8 md:w-14 md:h-14" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
