@@ -154,6 +154,16 @@ html {
     }
 }
 
+/* Small spinner for inline loading */
+.spinner-small {
+    border: 2px solid rgba(139, 92, 246, 0.1);
+    border-top-color: #8B5CF6;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 1s linear infinite;
+}
+
 /* Navbar effects */
 .nav-shadow {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
